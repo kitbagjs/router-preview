@@ -28,7 +28,7 @@ const keys = createRoute({
   name: 'settings.keys',
   path: '/keys',
   query: withParams('sort=[?sort]', { 
-    sort: withDefault(unionOf('asc', 'desc'), 'asc') 
+    sort: withDefault(unionOf(['asc', 'desc']), 'asc') 
   }),
   component: defineAsyncComponent(() => import('../views/SettingsKeysView.vue'))
 })
