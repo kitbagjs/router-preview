@@ -7,22 +7,22 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "test": "vitest --typecheck",
+    "test": "vitest",
     "playwright": "playwright test"
   },
   "dependencies": {
-    "@kitbag/router": "^0.20.1",
+    "@kitbag/router": "^0.20.6",
     "vue": "^3.4.26"
   },
   "devDependencies": {
     "@playwright/test": "^1.50.1",
     "@types/node": "^22.13.1",
-    "@vitejs/plugin-vue": "^5.0.4",
+    "@vitejs/plugin-vue": "^6.0.1",
     "happy-dom": "^17.1.0",
     "typescript": "^5.2.2",
-    "vite": "^5.2.10",
-    "vite-plugin-vue-devtools": "^7.3.0",
-    "vitest": "^3.0.5",
+    "vite": "^7.2.2",
+    "vite-plugin-vue-devtools": "^8.0.3",
+    "vitest": "^4.0.8",
     "vue-tsc": "^2.0.16"
   }
 }
