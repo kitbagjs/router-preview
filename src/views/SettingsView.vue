@@ -18,6 +18,24 @@ const route = useRoute('settings')
 
     <input type="text" placeholder="search" v-model="route.params.search" />
 
-    <router-view/>
+    <router-view>
+      <template #default="{ component }">
+        <transition name="fade">
+          <component :is="component" />
+        </transition>
+      </template>
+    </router-view>
   </div>
 </template>
+
+<style>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

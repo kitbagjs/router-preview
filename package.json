@@ -11,7 +11,7 @@
     "playwright": "playwright test"
   },
   "dependencies": {
-    "@kitbag/router": "^0.20.12",
+    "@kitbag/router": "0.22.2",
     "vue": "^3.4.26"
   },
   "devDependencies": {
