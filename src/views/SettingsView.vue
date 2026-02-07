@@ -20,7 +20,7 @@ const route = useRoute('settings')
 
     <router-view>
       <template #default="{ component }">
-        <transition name="fade">
+        <transition name="fade" mode="out-in">
           <component :is="component" />
         </transition>
       </template>
